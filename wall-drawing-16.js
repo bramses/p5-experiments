@@ -4,7 +4,7 @@ Bands of lines 12 inches (30 cm) wide, in three directions (vertical, horizontal
  */
 
 function setup () {
-    createCanvas(400,400);
+  createCanvas(400,400);
 }
 
 function draw() {
