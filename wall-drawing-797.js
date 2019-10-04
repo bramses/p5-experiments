@@ -38,8 +38,8 @@ function setup () {
         stroke(_color[i % 3]) 
         for ( let j = 0; j < 30; j++ ) {
             line(
-                points[j][0], points[j][2] + 10 + 10*i,
-                points[j][1], points[j][3] + 10 + 10*i
+                points[j][0], points[j][2] + 7 + 7*i,
+                points[j][1], points[j][3] + 7 + 7*i
             )
         }
         
