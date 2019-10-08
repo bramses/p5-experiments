@@ -4,7 +4,7 @@ let midCounter = 0
 
 function preload () {
     soundFormats('mp3')
-    mySound = loadSound('[MY-SONG-HERE]')
+    mySound = loadSound('assets/Formality.mp3') // put a song in the assets folder and try it out!
 }
 
 function setup () {
