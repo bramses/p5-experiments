@@ -74,4 +74,4 @@ function togglePlay() {
     } else {
       mySound.play();
     }
-  }
+}
