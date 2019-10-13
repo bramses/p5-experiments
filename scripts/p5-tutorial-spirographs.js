@@ -1,4 +1,4 @@
-let NUMSINES = 5; // how many of these things can we do at once?
+let NUMSINES = 6; // how many of these things can we do at once?
 let sines = new Array(NUMSINES); // an array to hold all the current angles
 let rad; // an initial radius value for the central sine
 let i; // a counter variable
@@ -12,12 +12,12 @@ let trace = true; // are we tracing?
 
 function setup() {
   createCanvas(710, 400);
-  console.log(height)
+
   rad = height / 4; // compute radius for central circle
   background(204); // clear the screen
 
   for (let i = 0; i<sines.length; i++) {
-    sines[i] = PI; // start EVERYBODY facing NORTH
+    sines[i] = 1.5 * PI; // start EVERYBODY facing NORTH
   }
 }
 
@@ -36,8 +36,8 @@ function draw() {
     let erad = 0; // radius for small "point" within circle... this is the 'pen' when tracing
     // setup for tracing
     if (trace) {
-      stroke(0, 0, 255 * (float(i) / sines.length), alpha); // blue
-      fill(0, 0, 255, alpha / 2); // also, um, blue
+      stroke(random(255), random(255), random(255) * (float(i) / sines.length), alpha); // blue
+      fill(random(255), random(255), random(255), alpha / 2); // also, um, blue
       erad = 5.0 * (1.0 - float(i) / sines.length); // pen width will be related to which sine
     }
     let radius = rad / (i + 1); // radius for circle itself

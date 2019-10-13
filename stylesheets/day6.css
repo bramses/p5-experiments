@@ -1,0 +1,53 @@
+#hello {
+    font-family: 'Hepta Slab', serif;
+    font-size: 40pt;
+}
+
+#ready {
+    font-family: 'Titillium Web', serif;
+    font-size: 38pt;
+}
+
+#down {
+    font-family: 'Titillium Web', serif;
+    font-size: 38pt;
+    color: white;
+}
+
+#up {
+    font-family: 'Titillium Web', serif;
+    font-size: 38pt;
+    color: white;
+}
+
+#begin {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 40pt;
+    color: #f99c06;
+}
+
+#one {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 38pt;
+    color: #033FF6;
+}
+
+body {
+    background: url("../assets/gym-class-bg.jpg") no-repeat;
+    background-size: 100%;
+    text-align: center;
+    justify-content: center;
+    padding: 25% 0;
+}
+
+
+.downClass {
+    width: 150px;
+    height: 80px;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    justify-content: center;
+    -ms-transform: rotate(20deg); /* IE 9 */
+    -webkit-transform: rotate(20deg); /* Safari 3-8 */
+    transform: rotate(20deg);
+}
