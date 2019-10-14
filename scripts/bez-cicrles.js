@@ -1,6 +1,7 @@
 let dataArr = []
 let dataLength = 35
 let radius = 200
+const once = true
 
 function setup () {
     createCanvas(600,600)
@@ -8,11 +9,12 @@ function setup () {
     background(0, 0, 100)
     noFill()
     frameRate(3)
+    if (once) dataArr = generateDataArray(dataLength)
 }
 
 function draw () {
     background(0, 0, 100)
-    dataArr = generateDataArray(dataLength)
+    if (!once) dataArr = generateDataArray(dataLength)
     translate(width / 2, height / 2)
     strokeWeight(1)
     
@@ -64,8 +66,11 @@ function draw () {
     }
    
     // become alive
-    radius = floor(random(50, 200))
-    dataLength = floor(random(5,25))
+    if (!once) {
+        radius = floor(random(50, 200))
+        dataLength = floor(random(5,25))
+    }
+    
 }
 
 /*
