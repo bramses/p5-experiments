@@ -1,6 +1,7 @@
 let mySound
 let bassCounter = 0
 let midCounter = 0
+let fft
 
 function preload () {
     soundFormats('mp3')
