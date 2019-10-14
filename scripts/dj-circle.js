@@ -58,9 +58,7 @@ function loadSong () {
     song = loadSound('../assets/Formality.mp3') // put a song in the assets folder and try it out!
 }
 
-function drawAmplitudeCircle (level) {
-
-    
+function drawAmplitudeCircle (level) {    
     let radius = map(level, 0, 1, minMap, maxMap)
     fill(307, 100, 75)
     circle(0, 0, radius)
