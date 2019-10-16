@@ -36,7 +36,7 @@ for (let i = 5; i < lines.length; i++) {
       
     context.quadraticCurveTo(lines[i][j].x, lines[i][j].y, lines[i][j + 1].x, lines[i][j + 1].y);
     context.save()
-    context.globalCompositeOperation = 'luminosity'
+    context.globalCompositeOperation = 'destination-in'
     context.fill()
     context.restore()
     context.stroke()

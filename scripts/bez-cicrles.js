@@ -1,7 +1,7 @@
 let dataArr = []
 let dataLength = 35
 let radius = 200
-const once = true
+const once = false
 
 function setup () {
     createCanvas(600,600)
