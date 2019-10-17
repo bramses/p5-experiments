@@ -9,7 +9,8 @@ function setup () {
     
     noLoop()
     colorMode(HSB, 360, 100, 100)
-    image(img, 0, 0, 600, 700)
+    background(0, 0, 83)
+    // image(img, 0, 0, 600, 700)
 }
 
 function draw () {
