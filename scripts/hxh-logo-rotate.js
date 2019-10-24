@@ -1,10 +1,6 @@
-let img
-let img2
 let img3
 let img4
 function preload () {
-    img = loadImage('../assets/hxh-logo-inner.png')
-    img2 = loadImage('../assets/hxh-logo-middle.png')
     img3 = loadImage('../assets/hxh-logo.jpg')
     img4 = loadImage('../assets/hxh-circle-2.png')
 }
